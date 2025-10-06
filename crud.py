@@ -54,6 +54,3 @@ def deletar_aluno(id_aluno):
         finally:
             cursor.close()
             conexao.close()
-
-id = int(input("Digite o id para deletar: "))
-deletar_aluno(id)
