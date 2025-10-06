@@ -6,7 +6,7 @@ st.markdown(
     <style>
 
     .stApp {
-        background: linear-gradient(to bottom right, #144F33, #1D7D50, #00FFBB); color: #000000; 
+        background: linear-gradient(to bottom right, #FFFFFF, #FFFFFF, #144F33); color: #000000; 
     }
         st.title {
         color: white;
@@ -33,7 +33,7 @@ if menu == "Inserir":
     if st.button("Cadastrar"):
         if nome.strip() != "":
             criar_aluno(nome, idade)
-            st.success(f"Aluno {nome} inserindo com sucesso!")
+            st.success(f"Aluno {nome} inserido com sucesso!")
         else:
             st.warning("O campo não pode estar vazio.")
 
