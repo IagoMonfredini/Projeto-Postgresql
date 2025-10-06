@@ -1,4 +1,4 @@
-import psycopg2 as pg 
+import  psycopg2 as pg 
 from dotenv import load_dotenv
 import os
 
@@ -16,18 +16,13 @@ def conectar():
     try:
         conexao = pg.connect(**params)
         cursor = conexao.cursor()
+        print("Deu certo!!!")
         return conexao, cursor
     except Exception as erro:
         print(f"Erro de conexão: {erro}")
         return None, None
     
-conexao, cursor = conectar()
-cursor.execute(
-    "INSERT INTO alunos (nome, idade) VALUES (%s,%s)",
-    ("Iago", 18)
-)
-conexao.commit()
-conexao.close()   
+
 
 
 
