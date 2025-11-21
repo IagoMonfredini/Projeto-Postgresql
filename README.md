@@ -52,3 +52,9 @@ python -m streamlit run app.py
 
 ### Autor
 Projeto desenvolvido em aula para treinar python + postgresql
+
+### 🧾 Licença
+Este projeto é de uso livre para fins educacionais e demonstração.
+Sinta-se à vontade para modificar e aprimorar conforme suas necessidades.
+
+Iago Monfredini - Coryright
